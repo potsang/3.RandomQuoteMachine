@@ -1,0 +1,74 @@
+body {
+  background-color: orange;
+}
+
+.jumbotron {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: cyan;
+}
+
+#blockquote-container {
+  background-color: lightyellow;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 20px;
+}
+
+#author {
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", serif;
+  border-left: 0em;
+  font-size: 1em;
+  margin: 1em .5em;
+  padding: .1em 1em;
+  line-height: 1.2em;
+}
+
+blockquote {
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", serif;
+  border-left: 0em;
+  font-size: 1em;
+  margin: 1em .5em;
+  padding: .1em 1em;
+  line-height: 1.2em;
+  quotes: "\201C""\201D";
+}
+
+blockquote:before {
+  font: Georgia;
+  color: black;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0;
+  vertical-align: -.41em;
+  padding: 0 .1em 0 .1em;
+}
+
+blockquote:after {
+  font: Georgia;
+  color: black;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.3em;
+  margin-right: 0.25em;
+  vertical-align: -0.57em;
+  padding: 0 0 0 .1em
+}
+
+blockquote:first-child {
+  display: absolute;
+  padding-top: 1.3em;
+}
+
+blockquote:last-child {
+  display: absolute;
+}
+
+.tweet {
+  border-radius: 5px;
+}
+
+img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
